@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App"/>
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All"/>
+    <PackageReference Include="AutoMapper" Version="8.0.0"/>
+    <PackageReference Include="AWSSDK.ElasticBeanstalk" Version="3.3.100.33"/>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\gidu.Domain\gidu.Domain.csproj"/>
+    <ProjectReference Include="..\gidu.DI\gidu.DI.csproj"/>
+  </ItemGroup>
+</Project>

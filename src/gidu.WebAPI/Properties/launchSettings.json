@@ -1,0 +1,37 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:34995",
+      "sslPort": 44350
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "api",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "gidu.WebAPI": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "api",
+      "applicationUrl": "http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "AWS_AccessKey": "",
+        "AWS_SecretKey": "",
+        "AWS_Bucket_Photo": "",
+        "Key_Password": "",
+        "Key_Token": "",
+        "TB_Users": "gidu_dev_users",
+        "TB_Members": "gidu_dev_members"
+      }
+    }
+  }
+}

@@ -1,7 +1,15 @@
 # Koreans
 
-<b> Testing TDD, DDD and Design Patterns: Asp.net Core, xunit and MongoDB</b>
+<b> Testing TDD, DDD and Design Patterns: Asp.net Core, xunit and DynamoDB</b>
 
-Asp.net Core 2.2 xunit
+Asp.net Core 2.2 
 
-MongoDB
+xunit
+
+DynamoDB
+
+S3
+
+Bitbucket pipelines
+
+Docker

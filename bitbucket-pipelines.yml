@@ -1,0 +1,23 @@
+image: atlassian/default-image:2
+
+pipelines:
+  branches:
+    master:
+      - step:
+          name: "Geração do Zip"
+          script:
+            - zip -r gidu-api.zip Dockerfile Dockerrun.aws.json src/gidu.Repository src/gidu.Domain src/gidu.WebAPI src/gidu.DI
+          artifacts: 
+            - gidu-api.zip
+      - step:
+          name: "Deploy"
+          script:
+            - pipe: atlassian/aws-elasticbeanstalk-deploy:0.2.9
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: 'sa-east-1'
+                APPLICATION_NAME: 'gidu'
+                ENVIRONMENT_NAME: 'gidu-api'
+                ZIP_FILE: 'gidu-api.zip'
+                S3_BUCKET: $AWS_BUCKET_ELASTICBEANSTALK
