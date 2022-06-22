@@ -7,7 +7,7 @@
     <PackageReference Include="AutoMapper" Version="8.0.0"/>
     <PackageReference Include="AWSSDK.DynamoDBv2" Version="3.3.101.24"/>
     <PackageReference Include="AWSSDK.ElasticBeanstalk" Version="3.3.100.33"/>
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2"/>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1"/>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\gidu.Domain\gidu.Domain.csproj"/>
